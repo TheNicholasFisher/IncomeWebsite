@@ -19,13 +19,12 @@ padding: 0;
 margin: 0;
 color: rgb(43, 43, 43);
 font-family: "Ubuntu Mono", monospace;
-font-style: bold;
 }
 
 
 .info h1{
     font-family: "Rubik Mono One", monospace;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 35px;
 }
 .info h2{
@@ -61,6 +60,20 @@ font-style: bold;
     
 }
 
+.sold h4{
+    display: grid;
+    font-size: 20px;
+    background: linear-gradient(135deg, #d33e3e 0%, #d33636 100%);
+    transform: rotate(-4deg);
+    margin-left: -6px;
+    margin-top: 16px;
+    height: 27px;
+    width: 160px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
 
 @media (min-width:1000px){
 
@@ -109,15 +122,6 @@ font-style: bold;
     max-width: 530px;
     text-align: center;
     }
-
-    .sold h4{
-        background: linear-gradient(135deg, #d33e3e 0%, #d33636 100%);
-        transform: rotate(-4deg);
-        margin-left: -4px;
-        width: 154px;
-        text-align: center;
-        color: white;
-    }
 }
 
 
@@ -157,13 +161,5 @@ font-style: bold;
     text-align: center;
     }
 
-    .sold h4{
-        background: linear-gradient(135deg, #d33e3e 0%, #d33636 100%);
-        transform: rotate(-4deg);
-        margin-left: -4px;
-        width: 154px;
-        text-align: center;
-        color: white;
-    }
     
 }
