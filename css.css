@@ -1,0 +1,122 @@
+
+
+
+
+/* i know this css is shit you dont have to tell me */
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+background-color: white;
+background-image: url('background.png');
+background-size: 25px;
+padding: 0;
+margin: 0;
+color: rgb(0, 0, 0);
+font-family: "Ubuntu Mono", monospace;
+font-style: bold;
+}
+
+.all{
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, 100px);
+    max-width: 1550px;
+    margin: auto;
+    display: flex;
+}
+
+
+@media (max-width:1000px){
+    .mobile{
+        display: block;
+        font-size: 20;
+        color: black;
+        background-color: white;
+    }
+
+    .all{
+        display: none;
+    }
+}
+
+@media (min-width:1000px){
+    .mobile{
+        display: none;
+    }
+}
+
+.info{
+background: white;
+padding: 10px;
+margin: 20px;
+max-width: 400px;
+text-transform: uppercase;
+}
+
+.info h1{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: bold;
+    font-size: 35px;
+}
+.info h2{
+    font-size: 25px;
+}
+.info a{
+    text-decoration: none;
+    color: #a5a5a5;
+}
+.info a:hover{
+    text-decoration: none;
+    color: #6d6d6d;
+}
+.shares{
+padding-left: 10px;
+padding-top: 10px;
+margin-left: 20px;
+margin-top: 20px;
+left: 480px;
+top: 20px;
+max-width: 1000px;
+display: grid;
+grid-template-columns: repeat(10, 75px);
+grid-auto-rows: minmax(50px, 65px);
+}
+
+.btn{
+text-decoration: none;
+position: absolute;
+font-family: Roboto, sans-serif;
+font-size: 14px;
+color: #000000;
+background: linear-gradient(135deg, #ebebeb 0%, #d1d1d1 100%);
+box-shadow: 1px 1px rgb(187, 187, 187);
+padding: 20px 25px;
+border-radius: 20px;
+align-items: center;
+cursor: pointer;
+max-width: 130px;
+text-align: center;
+}
+
+.btn:hover{
+    background: linear-gradient(135deg, #dfdfdf 0%, #c7c7c7 100%);
+}
+
+.sold{
+    position: absolute;
+    z-index: 5;
+}
+
+.sold h4{
+    background: linear-gradient(135deg, #cfcfcf 0%, #b1b1b1 100%);
+    transform: rotate(-7deg);
+    margin-left: -5px;
+    width: 78px;
+    box-shadow: 1px 1px rgb(187, 187, 187);
+    text-align: center;
+}
