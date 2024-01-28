@@ -32,11 +32,11 @@ font-family: "Ubuntu Mono", monospace;
 }
 
 .info a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #ffffff;
 }
 .info a:hover{
-    text-decoration: none;
+    text-decoration: underline;
     color: #a8a8a8;
 }
 
